@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_subscration"
+    tools:context="com.bharat.customeditautosuggestion.MainActivity">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardviewAddtags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:paddingBottom="15dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/edt_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_search"
+            android:background="@null"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="15dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/hint_color"
+            android:textColorHint="@color/text_small_color"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:digits="@string/restractor_emoji"
+            android:imeOptions="actionDone"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/img_search"
+            android:hint="@string/add_tags_eg_sleep_digestion"
+            android:singleLine="true"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="15dp"
+            android:text=""
+            android:textColor="@color/text_color_light_black"
+            android:textColorHint="@color/text_dark_gray"
+            android:textSize="14sp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_add_circle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/autoCompleteTextView"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider" />
+
+    </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CustomeEditAutsuggestion</string>
+    <string name="restractor_emoji">~?.,@#$%^&amp;*()_+-=\|/=\qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="add_tags_eg_sleep_digestion">Add tags </string>
+
+</resources>
